@@ -80,7 +80,7 @@ public class BarChart extends View {
         paintAxis.setStrokeWidth(4f);
 
         paintHorizontalLine = new Paint();
-        paintHorizontalLine.setColor(Color.GRAY);
+        paintHorizontalLine.setColor(Color.parseColor("#1EB2FC"));
         paintHorizontalLine.setStrokeWidth(2f);
 
 
