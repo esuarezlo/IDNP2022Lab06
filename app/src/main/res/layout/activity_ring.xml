@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RingActivity">
+
+    <org.idnp.idnp2022lab06.chart.RingChart
+        android:id="@+id/ringChart"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="#ECEBE8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <org.idnp.idnp2022lab06.chart.LeyendChart
+        android:id="@+id/ringChartLeyend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ADE9ECE5"
+        app:layout_constraintTop_toBottomOf="@id/ringChart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
