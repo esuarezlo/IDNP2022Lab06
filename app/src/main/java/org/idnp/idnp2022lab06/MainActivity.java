@@ -16,9 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnBarChart = findViewById(R.id.btnBarChart);
         Button btnRingChart = findViewById(R.id.btnRingChart);
+        Button btnSimpleClock = findViewById(R.id.btnSimpleClock);
 
         btnBarChart.setOnClickListener(btnBarChart_Event);
         btnRingChart.setOnClickListener(btnRingChart_Event);
+        btnSimpleClock.setOnClickListener(btnSimpleClock_Event);
     }
 
     private View.OnClickListener btnBarChart_Event = new View.OnClickListener() {
@@ -33,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), RingActivity.class);
+            startActivity(intent);
+        }
+    };
+
+    private View.OnClickListener btnSimpleClock_Event = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(getApplicationContext(), ClockActivity.class);
             startActivity(intent);
         }
     };
